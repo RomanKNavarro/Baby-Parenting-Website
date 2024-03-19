@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Pro-Tips</title>
+
+    <style>
+        /* Optional CSS for button styling */
+        .my-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            /* 10px top/bottom padding, 20px left/right padding */
+            /* padding for button's text. Margin is for OUTSIDE padding */
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /* wtf is margin again?  */
+            margin: 10px 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.5s ease;
+        }
+
+        .my-button:hover {
+            background-color: #45a049; /* Darker background color on hover */
+            transform: scale(1.1); /* Swelling effect on hover */
+        }
+        .button-container {
+            display: flex; /* Use flexbox layout */
+            justify-content: center; /* Center align the contents horizontally */
+        }
+
+        @font-face {
+            font-family: 'blockFont'; /* Define a font family name */
+            src: url('/media/fonts/square-kids-font/SquareKids-LZ5y.ttf') format('truetype'); /* Specify the URL of the .ttf file */
+        }
+
+        body {
+            background-image: url('/media/images/babyCarrot.jpeg'); /* Set background image */
+            background-size: cover; /* Cover the entire background */
+        }
+
+        body, .my-button, .welcome-button {
+            font-family: 'blockFont', Times; /* Use the custom font with fallback to a generic sans-serif font */
+        }
+
+        h1 {
+            font-size: 70px;
+            text-align: center;
+            transition: all 0.5s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        .welcome-button {
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.5s ease;
+            text-align: center;
+
+            margin:0 auto;
+            display:block;
+            border: none;
+            font-size: 30px;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1><span style="color: lightcoral;">Toddler</span> <span style="color: greenyellow;">Parenting</span> <span style="color: turquoise;">Tips</span></h1>
+    <div class="button-container">
+        <button class="my-button">Tip 1</button>
+        <button class="my-button">Tip 2</button>
+        <button class="my-button">Tip 3</button>
+    </div>
+
+    <div class="container">
+        <button class="welcome-button">Welcome</button>
+    </div>
+    
+
+</body>
+</html>
