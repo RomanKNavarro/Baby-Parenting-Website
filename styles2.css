@@ -28,28 +28,17 @@
 
 @font-face {
   font-family: 'blockFont'; /* Define a font family name */
-  /* Specify the URL of the .ttf file */
-  src: url('/media/fonts/square-kids-font/SquareKids-LZ5y.ttf') format('truetype'); 
-}
-
-@font-face {
-  font-family: 'normalFont';
-  src: url('/media/fonts/sweetie-summer-personal-use/Sweetie Summer.ttf') format('truetype');
+  src: url('/media/fonts/square-kids-font/SquareKids-LZ5y.ttf') format('truetype'); /* Specify the URL of the .ttf file */
 }
 
 body {
-  background-image: url('/media/images/babyCarrot.jpeg'); /* Set background image */
+  /* background-image: url('/media/images/givemeBaby.jpeg'); Set background image */
+  background-image: url('/media/images/babyCarrot.jpeg');
   background-size: cover; /* Cover the entire background */
 }
 
-/* HERE'S WHERE FONT IS SET */
 body, .my-button, .welcome-button {
   font-family: 'blockFont', Times; /* Use the custom font with fallback to a generic sans-serif font */
-}
-
-p {
-  font-family: 'normalFont', Times;
-  font-size: 25px;
 }
 
 h1 {
@@ -90,16 +79,15 @@ h1:hover {
   margin-top: 8%;
 }
 
-#hidden-text {
-  opacity: 0;
-}
+/* #hidden-text {
+  display: none;
+} */
 
 p {
-  color: white;
-  
-  text-shadow: 
+  /* text-shadow: 
   -1px -1px 0 #000,  
   1px -1px 0 #000,
   -1px 1px 0 #000,
-  1px 1px 0 #000;
+  1px 1px 0 #000; */
 }
+
